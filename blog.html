@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Artist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog">
+            <h1>Blog</h1>
+
+            <!-- Latest Projects -->
+            <article>
+                <h2 class="blog-title">Project: Chibi Style Blinking Gifs</h2>
+              <p class="blog-content">Explore my latest project,These fullbody colorful characters with chibi style are available in still image and blinking gifs. 2024</p>
+				 <img src="1.png" alt="Chibi1" style="width: 50%;"><img src="gallery1.gif" alt="BlinkingChibi1" style="width: 50%;">
+				<img src="2.png" alt="Chibi12" style="width: 50%;"><img src="gallery2.gif" alt="BlinkingChibi2" style="width: 50%;">
+				<img src="3.png" alt="Chibi3" style="width: 50%;"><img src="gallery3.gif" alt="BlinkingChibi3" style="width: 50%;">
+				<img src="4.png" alt="Chibi4" style="width: 50%;"><img src="gallery5.gif" alt="Chibi1" style="width: 50%;">
+                <p class="blog-content">&nbsp;</p>
+            </article>
+
+            <article>
+                <h2 class="blog-title">Project: Character Fanarts in Circle Stickers</h2>
+              <p class="blog-content">In the years 2018-2019 I was messing with a style where I used 'cutout style' backgrounds intended for sticker printing. Mostly this included circles but I would also try other shapes.</p>
+				<img src="gallery7.png" alt="Sticker1" style="width: 40%;"><img src="gallery6.png" alt="Sticker2" style="width: 40%;">
+				<img src="gallery21.png" alt="Sticker3" style="width: 40%;"><img src="gallery9.png" alt="Sticker4" style="width: 40%;">
+				<img src="gallery10.png" alt="Sticker5" style="width: 40%;"><img src="gallery19.png" alt="Sticker6" style="width: 40%;">
+                <p class="blog-content">&nbsp;</p>
+            </article>
+
+            <article>
+    <h2 class="blog-title">Project: (GORE WARNING) Corpse Party&nbsp; Horror Series</h2>
+    <p class="blog-content">My Corpse Party Series was a set of three drawings I made back in 2020 and do use blood and depictions of violence so viewer discretion is advised. For these drawings, the source material I was inspired by was Corpse Party by Makoto Kedoin.</p>
+    
+    <!-- Button to toggle visibility -->
+    <button onclick="toggleContent()">Show/Hide Content</button>
+    
+    <!-- Collapsible content -->
+    <div id="hiddenContent" style="display: none;">
+        <img src="blog1a.png" alt="BloodnGore1" style="width: 25%;">
+        <img src="blog2a.png" alt="BloodnGore2" style="width: 25%;">
+        <img src="blog3a.png" alt="BloodnGore3" style="width: 40%;">
+    </div>
+</article>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('hiddenContent');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
+
+
+            <!-- Art Tutorials -->
+            <article>
+                <h2 class="blog-title">Art Tutorial: Mastering Shadows</h2>
+                <p class="blog-content">Shadows can transform your art from flat to lifelike. In this tutorial, I share tips by the user (-) on (-) on creating realistic shadows and improving your compositions.</p>
+            </article>
+
+            <article>
+                <h2 class="blog-title">Art Tutorial: Making Hands Using Mitten Shape!</h2>
+              <p class="blog-content">you just gotta figure out how to do the mitten thing! (everybody does it differently, so whatever works for you)</p>
+                 <p class="blog-content"><img src="hands1.png" alt="Blog Image 1"></p>
+              <p class="blog-content">make a little mitten shape, a bump for the big thumb muscle, a line for where you want to knuckles to be (and where the fingers end), and you can work out how the hand does hand things~&nbsp;</p>
+                 <p class="blog-content"><img src="hands2.png" alt="Blog Image 2"></p>
+                <p class="blog-content">you can make them more simple or more real, however you want! hands are weird, so don’t worry if they keep looking wrong for a while, once you figure out what works for you, it’ll click. If you practice like 10 or-so basic hand shapes, you can make slight variations on all those, and 10 turns into 20 different hand poses~ &nbsp;</p>
+                 <p class="blog-content"><img src="hands3.png" alt="Blog Image 1"></p>
+				 <p class="blog-content"><img src="hands4.png" alt="Blog Image 1"></p>
+<p class="blog-content">Good luck, you can do it, practice until you find your groove, hands are stupid, don’t worry if they don’t look right!&nbsp;</p>
+            </article>
+
+            <!-- Art News -->
+            <article>
+                <h2 class="blog-title">Art News: Upcoming Digital Art Trends</h2>
+                <p class="blog-content">Stay ahead of the curve with these emerging trends in the digital art world, from AI-generated art to the rise of mixed media techniques.</p>
+            </article>
+
+            <article>
+                <h2 class="blog-title">VIDEO - Drawing Process: My First Blinking Chibi</h2>
+             
+            </article>
+
+            <!-- Video Section -->
+            <div class="media-section">
+                <h3>&nbsp;</h3>
+                <video controls>
+                    <source src="example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Load More Button -->
+            <button id="load-more">Load More</button>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Rita Carroll. All rights reserved.</p>
+    </footer>
+</body>
+</html>
