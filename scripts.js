@@ -43,4 +43,14 @@ $(document).ready(function() {
     }, function() {
         $(this).css('color', '#d081a1');
     });
+
+    // Function to toggle Show/Hide Content
+    window.toggleContent = function() {
+        var content = document.getElementById('hiddenContent');
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    };
 });
