@@ -7,7 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Artist Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Keyframes for pulsing animation */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Pulsing animation for heading */
+        .contact h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            animation: pulse 2s infinite;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling and hover transition */
+        .contact button {
+            background-color: #ff69b4; /* Pink color */
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .contact button:hover {
+            background-color: #ff1493; /* Darker pink for hover effect */
+        }
+    </style>
 </head>
 <body>
     <header>
